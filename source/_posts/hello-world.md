@@ -1,6 +1,6 @@
 ---
-title: {{ title }}
-date: {{ date }}
+title: hello-world 
+date: 2025/1/1
 tags:
 ---
 

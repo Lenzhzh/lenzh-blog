@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html>
+    <title>STI Theme</title>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <% site.posts.forEach(function(post) { %>
+            <%- post.path %>
+            <br/>
+            <%- post.slug %>
+            <br/>
+            <%- post._id %>
+            <br/>
+            <%- post.title %>
+            <br/>
+            <%- post.date %>
+            <br/>
+            <a href="/<%- post.path %>"> <%- post.title %> </a>
+            <hr/>
+        <% }); %>
+    </body>
+    
+</html>

@@ -1,6 +1,6 @@
 ---
-title: {{ title }}
-date: {{ date }}
+title: test
+date: 2024/1/1
 tags:
 ---
 
