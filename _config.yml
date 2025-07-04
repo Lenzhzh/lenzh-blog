@@ -52,6 +52,6 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: particleX
+theme: STI
 deploy:
   type: ''
