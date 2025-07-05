@@ -2,15 +2,15 @@ title: Hexo
 subtitle: ''
 description: ''
 keywords: null
-author: John Doe
+author: STIers
 language: en
 timezone: ''
 url: http://example.com
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
-  trailing_index: true
-  trailing_html: true
+  trailing_index: false
+  trailing_html: false
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -52,6 +52,6 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: STI
+theme: PinBlog
 deploy:
   type: ''

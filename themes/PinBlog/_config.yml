@@ -1,0 +1,22 @@
+title:PinBlog
+
+author: Len_zh
+menus:
+  Home:
+    name: house
+    theme: solid
+    link: /
+  About:
+    name: info
+    theme: solid
+    link: /about/
+  Archive:
+    name: archive
+    theme: solid
+    link: /archive/
+
+links:
+  GitHub: https://github.com
+  Twitter: https://twitter.com
+
+
