@@ -1,18 +1,17 @@
 <!--设置顶部菜单栏-->
-<div id="menu": class="{ hidden: hiddenMenu, 'menu-color': menuColor }">
-    <nav id="menu">
-        <!--最前面的标题+首页跳转-->
-        <a class="'title" href="<%- config.root %>">
-            <span><%= config.title.toUpperCase() %></span>
-        </a>
-        <!--渲染其他标签, 从config中读取-->
-        <% Object.entries(theme.menu).forEach(([key, value]) => { 
-            %>
-                <a href="<%= url_for(value.link) %>">
-                    <i class="fa-<%- value.theme %> fa-<%- value.name %> fa-fa-fw"></i> 
-                    <span>&ensp; <%= key %> </span>
-                </a>
-            <%
-        }); %>
-    </nav>
+<div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor }">
+    <!--最前面的标题+首页跳转-->
+    <a class="title" href="<%- config.root %>">
+        <span><%= config.title.toUpperCase() %></span>
+    </a>
+
+    <span>&ensp;&ensp;&ensp;</span>
+
+    <!--渲染其他标签, 从config中读取-->
+    <% Object.entries(theme.menu).forEach(([key, value]) => { %>
+    <a href="<%- url_for(value.link) %>">
+        <i class="fa-<%- value.theme %> fa-<%- value.name %>"></i>
+        <span>&ensp;<%= key %></span>
+    </a>
+    <%}); %>
 </div>

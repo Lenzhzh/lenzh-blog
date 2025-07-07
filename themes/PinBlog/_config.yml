@@ -1,22 +1,31 @@
-title:PinBlog
-
+title: PinBlog
+language: zh-CN
 author: Len_zh
-menus:
+
+avatar: /img/Len-zh.jpg
+
+card:
+  enable: true
+  description: 
+    a normal Len_zh!
+  iconLinks:
+    GitHub: 
+      theme: brands
+      name: github
+      link: https://github.com
+
+menu:
   Home:
     name: house
     theme: solid
     link: /
   About:
-    name: info
+    name: id-card
     theme: solid
     link: /about/
   Archive:
-    name: archive
+    name: box-archive
     theme: solid
     link: /archive/
-
-links:
-  GitHub: https://github.com
-  Twitter: https://twitter.com
 
 

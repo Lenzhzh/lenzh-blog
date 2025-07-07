@@ -1,24 +1,19 @@
 <!DOCTYPE html> 
-<html>
-    <title>STI Theme</title>
+<html lang="<%- config.language %>">
     <head>
         <meta charset="UTF-8">
-        <title> <%- title %></title>
-        <meta name="author" content="<%- config.author %>"
+        <title> <%- config.title %></title>
+        <meta name="author" content="<%- config.author %>" />
+        <%- partial("import") %>
     </head>
 
-    <%- css('css/main.css') %>
-
     <body>
-        <div id="main">
-            
-            
-
-
-
-
+        <div id="layout">
+            <%- partial("index")%>
+            <%- partial("menu") %>
+            <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>asas -->
+            <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>asas -->
         </div>
     </body>
-
-    <%- js('js/main.js') %>
+    <script src="<%- url_for('/js/main.js') %>"></script>
 </html>

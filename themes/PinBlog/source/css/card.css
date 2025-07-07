@@ -1,0 +1,80 @@
+#home-card {
+    width: 300px;
+}
+
+#home-card #card {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(205, 205, 205);
+
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    justify-content: center;
+    overflow: auto;
+    position: sticky;
+    text-align: center;
+    top: 10vh;
+    width: 300px;
+}
+
+#home-card #card-div {
+    overflow: auto;
+    padding: 25px 0;
+}
+
+#home-card #card-div .name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#home-card #card-div .avatar {
+    border: #f1f1f1 solid 3px;
+    border-radius: 5px;
+    height: 184px;
+    width: 184px;
+    margin: auto;
+    text-align: center;
+}
+
+#home-card #card-div .avatar img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+#home-card #card-div .avatar:hover img {
+    filter: brightness(70%) blur(2px);
+    
+}
+
+#home-card #card-div .description {
+    margin: 20px auto;
+    width: 85%;
+}
+
+#home-card #card-div .icon-links .icon-link {
+    margin: 5px
+}
+
+#home-card #card-div .icon-links a {
+    border-radius: 5px;
+    color: #5c6b72;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#home-card #card-div .icon-links {
+    border-top: #cdcdcd solid 1px;
+    margin: 10px auto;
+    padding-top: 10px;
+    width: 85%;
+}
+
+#home-card #card-div .icon-links a:hover {
+    background: #383838;
+    color: #fff;
+}

@@ -1,9 +1,9 @@
 const app = Vue.createApp({
-    mixin: Object.values(mixins),
+    mixins: Object.values(mixins),
     data() {
         return {
             loading: true,
-            hiddenMenu: true,
+            hiddenMenu: false,
             showMenu: false,
             menuColor: false,
             scrollTop: 0,
@@ -13,7 +13,7 @@ const app = Vue.createApp({
     created() {
         window.addEventListener("load", () => {
             this.loading = false;
-        })
+        });
     },
     mounted() {
         window.addEventListener("scroll", this.handleScroll, true);
@@ -24,7 +24,7 @@ const app = Vue.createApp({
             for (let i of this.renderers) i();
         },
         handleScroll() {
-            let wrap = this.$refs.homePostsWarp();
+            let wrap = this.$refs.homePostsWarp;
             let newScrollTop = document.documentElement.scrollTop;
             if (this.scrollTop < newScrollTop) {
                 this.hiddenMenu = true;
@@ -47,6 +47,6 @@ const app = Vue.createApp({
             this.scrollTop = newScrollTop;
         },
     },
-})
+});
 
 app.mount("#layout");

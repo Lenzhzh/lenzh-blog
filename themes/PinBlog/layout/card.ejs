@@ -1,0 +1,32 @@
+<!--首页处介绍卡片-->
+<div id="card">
+    <div id="card-div">
+        <div class="avatar">
+            <img src="<%- url_for(theme.avatar) %>" alt="avatar">
+        </div>
+        <div class="name">
+            <%- config.author %>
+        </div>
+        <div class="description">
+            <%- markdown(theme.card.description) %>
+        </div>
+
+        <% if (theme.card.iconLinks) { %>
+            <div class="icon-links">
+                <% Object.entries(theme.card.iconLinks).forEach(([key, value]) => { %>
+                    <span class="icon-link">
+                        <a href="<%- value.link %>">
+                            <i class="fa-<%- value.theme %> fa-<%- value.name %>"></i>
+                        </a>
+                    </span>
+                <% }); %>
+            </div>
+        <% } %>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        new Draggabilly('#card', { });
+    });
+</script>
