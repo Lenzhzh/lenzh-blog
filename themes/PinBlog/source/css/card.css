@@ -89,10 +89,6 @@
     width: 85%;
 }
 
-#home-card #card-bottom {
-    border-top: #656565 solid 1px;
-}
-
 #home-card #card-bottom button {
     background-color: transparent;
     border: none;

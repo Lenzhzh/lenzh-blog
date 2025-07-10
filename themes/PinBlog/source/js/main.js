@@ -20,7 +20,6 @@ const app = Vue.createApp({
     mounted() {
         window.addEventListener("scroll", this.handleScroll, true);
         this.render();
-        this.handleCard();
     },
     methods: {
         render() {
@@ -50,10 +49,6 @@ const app = Vue.createApp({
             }
             this.scrollTop = newScrollTop;
         },
-
-        handleCard() {
-           new Draggabilly("#home-card #card", {});
-        }
     },
 });
 

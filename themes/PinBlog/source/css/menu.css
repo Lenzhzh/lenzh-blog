@@ -46,7 +46,7 @@
 }
 
 #menu.menu-color {
-    background: #003;
+    background: rgba(107, 107, 107, 0.9);
 }
 
 #menu.menu-color a, #menu.menu-color.title {

@@ -1,3 +1,7 @@
+<% 
+    if (is_home()) type = 'index';
+%>
+
 <!DOCTYPE html> 
 <html lang="<%- config.language %>">
     <head>
@@ -9,10 +13,18 @@
 
     <body>
         <div id="layout">
-            <%- partial("index")%>
             <%- partial("menu") %>
             <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>asas -->
             <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>asas -->
+            
+            <main>
+                <%- body %>
+            </main>
+
+            <footer>
+                
+            </footer>
+
         </div>
     </body>
     <script src="<%- url_for('/js/main.js') %>"></script>

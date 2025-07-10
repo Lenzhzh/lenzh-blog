@@ -1,4 +1,13 @@
 <div id="home-head">
+    <% if (theme.background) { %>
+        <div 
+            id="home-background"
+            ref="homeBackground"
+            data-images="<%- theme.background.images.map(url_for) %>"
+            data-interval="<%- theme.background.interval || 5000 %>"
+            data-transition="<%- theme.background.transition || 'kenburn' %>"
+        ></div>    
+    <% } %>
     
 </div>
 
