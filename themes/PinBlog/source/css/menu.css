@@ -49,6 +49,6 @@
     background: #003;
 }
 
-#menu .menu-color a, #menu .menu-color .title {
+#menu.menu-color a, #menu.menu-color.title {
     color: #fff;
 }

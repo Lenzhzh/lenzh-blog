@@ -21,7 +21,7 @@
 
 #home-card #card-div {
     overflow: auto;
-    padding: 25px 0;
+    padding-top: 25px;
 }
 
 #home-card #card-div .name {
@@ -77,4 +77,33 @@
 #home-card #card-div .icon-links a:hover {
     background: #383838;
     color: #fff;
+}
+
+#home-card #card-folded {
+    overflow: auto;
+    padding-top: 25px;
+}
+
+#home-card #card-folded a {
+    margin: 20px auto;
+    width: 85%;
+}
+
+#home-card #card-bottom {
+    border-top: #656565 solid 1px;
+}
+
+#home-card #card-bottom button {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: #383838;
+    text-align: center;
+    padding: 10px;
+
+}
+
+#home-card #card-bottom button:hover {
+    color: #fff;
+    background-color: #383838;
 }

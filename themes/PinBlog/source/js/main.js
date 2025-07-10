@@ -1,11 +1,13 @@
+const mixins = {};
 const app = Vue.createApp({
     mixins: Object.values(mixins),
     data() {
         return {
             loading: true,
             hiddenMenu: false,
-            showMenu: false,
-            menuColor: false,
+            showMenu: true,
+            menuColor: true,
+            foldCard: false,
             scrollTop: 0,
             renderers: [],
         };
@@ -18,11 +20,13 @@ const app = Vue.createApp({
     mounted() {
         window.addEventListener("scroll", this.handleScroll, true);
         this.render();
+        this.handleCard();
     },
     methods: {
         render() {
             for (let i of this.renderers) i();
         },
+
         handleScroll() {
             let wrap = this.$refs.homePostsWarp;
             let newScrollTop = document.documentElement.scrollTop;
@@ -46,6 +50,10 @@ const app = Vue.createApp({
             }
             this.scrollTop = newScrollTop;
         },
+
+        handleCard() {
+           new Draggabilly("#home-card #card", {});
+        }
     },
 });
 
