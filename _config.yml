@@ -54,4 +54,6 @@ exclude: null
 ignore: null
 theme: PinBlog
 deploy:
-  type: ''
+  type: git
+  repo: git@github.com:Lenzhzh/Lenzhzh.github.io.git
+  branch: master
