@@ -1,8 +1,10 @@
-title: PinBlog
+title: Len_zhの奇妙小博客
 language: zh-CN
 author: Len_zh
 
 avatar: /img/Len-zh.jpg
+
+icon: /img/len-zh.jpg
 
 card:
   enable: true
