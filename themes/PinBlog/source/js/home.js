@@ -3,7 +3,9 @@ mixins.home = {
         this.menuColor = true;
 
         document.addEventListener('DOMContentLoaded', function () {
-            new Draggabilly('#card', { });
+            new Draggabilly('#card', {
+                containment: 'body'
+            });
         });
 
         let background = this.$refs.homeBackground;

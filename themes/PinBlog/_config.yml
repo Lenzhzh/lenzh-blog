@@ -17,9 +17,7 @@ card:
 background:
   images: 
     - /img/background1.jpg
-    - /img/background2.jpg
   interval: 5000 # 图片切换间隔
-  transition: kenburn # 过渡
 
 menu:
   Home:
@@ -35,4 +33,11 @@ menu:
     theme: solid
     link: /archive/
 
+# tags的颜色
+colors:
+    - "#ffa2c4"
+    - "#00bcd4"
+    - "#03a9f4"
+    - "#00a596"
+    - "#ff7d73"
 

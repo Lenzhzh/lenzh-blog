@@ -1,21 +1,23 @@
-<div id="home-head">
-    <div 
-        id="home-background"
-        ref="homeBackground"
-        data-images="<%- theme.background.images.map(url_for) %>"
-        data-interval="<%- theme.background.interval || 5000 %>"
-        data-transition="<%- theme.background.transition || 'kenburn' %>"
-    ></div>    
-</div>
+<div id="index">
+    <div id="home-head">
+        <div 
+            id="home-background"
+            ref="homeBackground"
+            data-images="<%- theme.background.images.map(url_for) %>"
+            data-interval="<%- theme.background.interval || 5000 %>"
+        ></div>    
+    </div>
 
-<div
-    id="home-posts-wrap"
-    ref="homePostsWarp"
-    <%-  %>
->
+    <div
+        id="home-posts-wrap"
+        ref="homePostsWarp"
+    >
+        <div id="home-posts">
+            <%- partial("posts") %>
+        </div>
+    </div>
 
     <div id="home-card" draggable="true">
         <%- partial("card") %>
     </div>
 </div>
-

@@ -35,7 +35,7 @@ const app = Vue.createApp({
                 this.hiddenMenu = false;
             }
             if (wrap) {
-                if (newScrollTop <= window.innerHeight - 100) {
+                if (newScrollTop <= window.innerHeight/2 - 28) {
                     this.menuColor = true;
                 } else {
                     this.menuColor = false;
