@@ -56,4 +56,4 @@ theme: PinBlog
 deploy:
   type: git
   repo: git@github.com:Lenzhzh/Lenzhzh.github.io.git
-  branch: master
+  branch: main
