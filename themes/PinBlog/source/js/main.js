@@ -1,4 +1,3 @@
-const mixins = {};
 const app = Vue.createApp({
     mixins: Object.values(mixins),
     data() {
@@ -6,7 +5,7 @@ const app = Vue.createApp({
             loading: true,
             hiddenMenu: false,
             showMenu: true,
-            menuColor: true,
+            menuColor: false,
             foldCard: false,
             scrollTop: 0,
             renderers: [],

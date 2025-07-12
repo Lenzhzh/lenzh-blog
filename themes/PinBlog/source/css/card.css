@@ -1,5 +1,7 @@
 #home-card {
     width: 300px;
+    z-index: 1009;
+    position: relative;
 }
 
 #home-card #card {
@@ -89,7 +91,7 @@
     width: 85%;
 }
 
-#home-card #card-bottom button {
+#home-card #card-head button {
     background-color: transparent;
     border: none;
     border-radius: 5px;
@@ -99,7 +101,7 @@
 
 }
 
-#home-card #card-bottom button:hover {
+#home-card #card-head button:hover {
     color: #fff;
     background-color: #383838;
 }

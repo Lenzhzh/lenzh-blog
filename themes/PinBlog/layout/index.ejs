@@ -1,20 +1,21 @@
 <div id="home-head">
-    <% if (theme.background) { %>
-        <div 
-            id="home-background"
-            ref="homeBackground"
-            data-images="<%- theme.background.images.map(url_for) %>"
-            data-interval="<%- theme.background.interval || 5000 %>"
-            data-transition="<%- theme.background.transition || 'kenburn' %>"
-        ></div>    
-    <% } %>
-    
+    <div 
+        id="home-background"
+        ref="homeBackground"
+        data-images="<%- theme.background.images.map(url_for) %>"
+        data-interval="<%- theme.background.interval || 5000 %>"
+        data-transition="<%- theme.background.transition || 'kenburn' %>"
+    ></div>    
 </div>
 
-<div id="home-info" @click="homeClick">
-    
+<div
+    id="home-posts-wrap"
+    ref="homePostsWarp"
+    <%-  %>
+>
+
+    <div id="home-card" draggable="true">
+        <%- partial("card") %>
+    </div>
 </div>
 
-<div id="home-card" draggable="true">
-    <%- partial("card") %>
-</div>

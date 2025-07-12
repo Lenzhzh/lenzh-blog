@@ -1,5 +1,18 @@
 <!--首页处介绍卡片-->
 <div id="card">
+    <div id="card-head">
+        <button id="card-toggle-btn" @click="foldCard=!foldCard; console.log(foldCard);">
+            <div class="folded" v-if="!foldCard">
+                <a>收起 &ensp;&ensp;&ensp;&ensp;</a>
+                <i class="fa-solid fa-minus"></i>
+            </div>
+            <div class="folded" v-if="foldCard">
+                <a>展开 &ensp;&ensp;&ensp;&ensp;</a>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </button>
+    </div>
+    
     <div id="card-div" v-if="!foldCard">
         <div class="avatar">
             <img src="<%- url_for(theme.avatar) %>" alt="avatar">
@@ -23,23 +36,4 @@
             </div>
         <% } %>
     </div>
-
-    <div id="card-bottom">
-        <button id="card-toggle-btn" @click="foldCard=!foldCard; console.log(foldCard);">
-            <div class="folded" v-if="!foldCard">
-                <a>收起 &ensp;&ensp;&ensp;&ensp;</a>
-                <i class="fa-solid fa-minus"></i>
-            </div>
-            <div class="folded" v-if="foldCard">
-                <a>展开 &ensp;&ensp;&ensp;&ensp;</a>
-                <i class="fa-solid fa-plus"></i>
-            </div>
-        </button>
-    </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        new Draggabilly('#card', { });
-    });
-</script>

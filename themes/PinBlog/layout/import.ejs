@@ -2,11 +2,16 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
 
+<script> const mixins = {}; </script>
+
 <link rel="stylesheet" href="<%- url_for("/css/menu.css") %>" />
 <link rel="stylesheet" href="<%- url_for("/css/card.css") %>" />
+<link rel="stylesheet" href="<%- url_for("/css/home.css") %>" />
 
 
-
+<% if (type==="index") { %>
+    <script src="<%- url_for('/js/home.js') %>"></script>
+<% } %>
 
 
 

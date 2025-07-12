@@ -1,16 +1,16 @@
-#home-head #home-background{
-    position: fixed;
-    top: 0;
-    align-self: center;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background-size: cover;
-    background-position: center center;
+#home-head #home-background {
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
 }
 
-#home-head #home-background.transition-kenburn {
+#home-head #home-background .transition-kenburn {
     animation: kenburns 20s ease-out infinite;
 }
 
@@ -46,3 +46,4 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
