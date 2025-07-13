@@ -108,3 +108,10 @@
     color: #fff;
     background-color: #383838;
 }
+
+@media (max-width: 900px) { 
+    #home-card {
+        display: none;
+    }
+
+}
