@@ -1,0 +1,37 @@
+<div id="home-head">
+    <div
+        id="home-background"
+        ref="homeBackground"
+        data-images="<%- theme.background.images.map(url_for) %>"
+        data-interval="<%- theme.background.interval %>"
+    ></div>
+    <div id="home-info" @click="homeClick">
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="loop"></span>
+        <span class="info">
+            <div class="wrap">
+                <h1><%= theme.loopTitle %></h1>
+                <h3><%= theme.loopSubtitle %></h3>
+                <h5><%= theme.loopDescription %></h5>
+            </div>
+        </span>
+    </div>
+</div>
+<div
+    id="home-posts-wrap"
+    ref="homePostsWrap"
+    <%- theme.card.enable || 'class="home-posts-wrap-no-card"' %>
+>
+    <div id="home-posts">
+        <%- partial("posts") %>
+        <%- partial("current") %>
+    </div>
+    <% if (theme.card.enable) { %>
+    <div id="home-card">
+        <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+        <%- partial("card") %>
+    </div>
+    <% } %>
+</div>

@@ -32,7 +32,7 @@
                     let id = Math.floor(Math.random() * colors.length);
                     prev = colors[id];
                 %>
-                <a href="<%- url_for(tag.path) %>" style="--tag-color: <%- colors[id] %>; color: var(--tag-color);">
+                <a href="<%- url_for(tag.path) %>" style="color: '<%- colors[id] %>'">
                     <%= tag.name %>
                 </a>
             </span>
@@ -40,8 +40,46 @@
         </span>
         <% } %>
     </div>
-
+    <% if (theme.crypto.enable && typeof page.secret !== "undefined") { %>
+    <% const CryptoJS = getCryptoJS(); %>
+    <input
+        id="crypto"
+        :class="['input', cryptoStatus]"
+        :disabled="cryptoStatus === 'success'"
+        ref="crypto"
+        placeholder="文章被加密，请输入密码"
+        data-encrypted="<%- CryptoJS.AES.encrypt(page.content, page.secret).toString() %>"
+        data-shasum="<%- CryptoJS.SHA256(page.content).toString() %>"
+        v-model="crypto"
+    />
+    <transition name="fade">
+        <div class="content" ref="content" v-show="cryptoStatus === 'success'"></div>
+    </transition>
+    <% } else { %>
     <div class="content" v-pre>
         <%- page.content %>
     </div>
+    <% } %>
+    <% if (page.comments) { %>
+    <% if (theme.gitalk.enable) { %>
+    <div id="comment">
+        <div id="gitalk-container"></div>
+    </div>
+    <% } %>
+    <% if (theme.giscus.enable) { %>
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    <% } %>
+    <% if (theme.waline.enable) { %>
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
+    <% } %>
+    <% if (theme.twikoo.enable) { %>
+    <div id="comment">
+        <div id="twikoo-container"></div>
+    </div>
+    <% } %>
+    <% } %>
 </div>

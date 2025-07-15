@@ -19,7 +19,7 @@ card:
 background:
   images: 
     - /img/background1.jpg
-  interval: 5000 # 图片切换间隔
+  interval: 5000
 
 menu:
   Home:
@@ -34,6 +34,10 @@ menu:
     name: box-archive
     theme: solid
     link: /archive/
+  Desktop:
+    name: display-code
+    theme: solid
+    link: /desktop/
 
 # tags的颜色
 colors:

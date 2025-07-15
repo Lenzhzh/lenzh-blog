@@ -1,0 +1,153 @@
+.article .info .category,
+.article .info .tags,
+.article .info .tags .tag {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.article .info a {
+    color: #5c6b72;
+}
+
+.article .info {
+    line-height: 1.7;
+}
+
+.article {
+    box-sizing: border-box;
+    width: 900px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.article .content {
+    margin: 50px 0;
+}
+
+.article .info .date {
+    color: #5c6b72;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.code-content {
+    font-size: 13px;
+    line-height: 2;
+    overflow: auto;
+    padding: 50px 30px 20px;
+    white-space: pre;
+}
+
+.content {
+    transition: opacity 0.25s;
+}
+
+.content img,
+.content video,
+.content audio,
+.content iframe {
+    display: block;
+    margin: 15px auto;
+    max-width: 75%;
+}
+
+.copycode {
+    color: #5c6b72;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.copycode i {
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.25s;
+}
+
+.copycode.copied i {
+    transform: scale(1.25);
+}
+
+.copycode.copied i:first-child,
+.copycode:not(.copied) i:last-child {
+    opacity: 0;
+}
+
+.language {
+    background: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 0.75rem #ed6ea14d;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    left: 30px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+}
+
+a {
+    color: #66afef;
+    text-decoration: none;
+}
+
+a:hover,
+.content .copycode:hover {
+    opacity: 0.8;
+}
+
+code {
+    background: #bddcf76b;
+    border-radius: 4px;
+    line-height: 2.5;
+    padding: 4px 8px;
+}
+
+table:not(.hljs-ln) {
+    margin: 15px 0;
+}
+
+table:not(.hljs-ln) td:nth-child(even) {
+    background: #c7e0fb4d;
+}
+
+table:not(.hljs-ln) td:nth-child(odd) {
+    background: #d9e8ff4d;
+}
+
+table:not(.hljs-ln) th {
+    background: #a3ddfb;
+}
+
+table:not(.hljs-ln) tr th,
+table:not(.hljs-ln) tr td {
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 27px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 21px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 15px;
+}
+hr {
+    border-style: dashed none none;
+    border-width: 1.5px;
+}

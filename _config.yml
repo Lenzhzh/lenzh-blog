@@ -1,4 +1,4 @@
-title: Len_zh's Blog
+title: Len_zhの奇妙小博客
 subtitle: ''
 description: ''
 keywords: null
@@ -52,7 +52,7 @@ pagination_dir: page
 include: null
 exclude: null
 ignore: null
-theme: PinBlog
+theme: particlex
 deploy:
   type: git
   repo: git@github.com:Lenzhzh/Lenzhzh.github.io.git
